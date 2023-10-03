@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  color: #222;
+  font-size: 1rem;
+}
+
+/* temperature-converter */
+.temperature-converter {
+  background: #fff;
+  width: 100%;
+  min-width: 320px;
+  padding: 20px 25px 45px;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+/* mobile */
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #1916c4;
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* title */
+.title {
+  color: #04a071;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* result */
+.result {
+  text-align: center;
+  margin: 20px 0;
+  color: orange;
+}
+
+.result-heading {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.celsius-value {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  transition: all 0.45s ease;
+}
+
+/* degree-type */
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  text-transform: uppercase;
+}
+
+label {
+  color: #555;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+/* input-field */
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: purple;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input:focus {
+  border: 1px solid #7b79f1;
+}
+
+/* for option selection */
+option {
+  background: #444;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* convert-button */
+#convert-btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #4c49eb, #2927a9);
+  color: #fff;
+  padding: 12px 80px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in, background 0.5s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  background: linear-gradient(to bottom, #2f2cf5, #1916c4);
+}
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}

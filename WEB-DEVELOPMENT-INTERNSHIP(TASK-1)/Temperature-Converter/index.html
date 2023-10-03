@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Temperature Converter : I'm created a simple website using CSS, HTML,
+      JAVASCRIPT to convert temperature form Celsius to Fahrenheit and etc.
+    </title>
+    <link rel="shortcut icon" href="./img/centigrade.png" type="image/x-icon" />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fontawesome cdn link -->
+    <script
+      src="https://kit.fontawesome.com/aa98975ad5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="temperature-converter">
+        <!-- mobile icon -->
+        <div class="mobile">
+          <p>09:30 AM</p>
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <h2 class="title">Temperature Converter</h2>
+
+        <!-- showing results here -->
+        <div class="result">
+          <span class="result-heading">Result</span>
+          <h2 class="celsius-value" id="celsius">1</h2>
+        </div>
+
+        <!-- input-field -->
+        <div class="degree-type">
+          <!-- for degree -->
+          <div class="degree-field">
+            <label for="degree">Degrees</label>
+            <input type="number" name="degree" id="degree" />
+          </div>
+
+          <!-- for option selection -->
+          <div class="temp-field">
+            <label for="temp-type">Type</label>
+            <select name="temperatures" id="temp-type" autocomplete="on">
+              <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+              <option value="celsius" id="celsius">Celsius</option>
+              <option value="kelvin" id="kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+        <button id="convert-btn">Convert</button>
+      </div>
+    </div>
+    <!-- js tags -->
+    <script src="app.js"></script>
+  </body>
+</html>
