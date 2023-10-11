@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(45deg, #0064ff, #9c78ff, #0064ff); */
+}
+
+.container {
+  width: 400px;
+  height: min-content;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* search box */
+.search-box {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input {
+  width: 84%;
+  font-size: 20px;
+  color: #000;
+  text-transform: capitalize;
+  background: #e6f5fb;
+  border-radius: 14px;
+  padding: 12px 16px;
+}
+
+.search-box input::placeholder {
+  color: #000;
+}
+
+.search-box button {
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  background: #e6f5fb;
+  border-radius: 14px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #0064ff, #9c78ff, #0064ff);
+  background-position-x: 200px;
+}
+
+/* weather-body */
+
+.weather-body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.weather-body img {
+  width: 60%;
+}
+
+.weather-box {
+  margin: 20px;
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temperature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* weather-details */
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.humidity,
+.wind-speed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.humidity {
+  margin-left: 20px;
+}
+
+.wind-speed {
+  margin-right: 20px;
+}
+
+.humidity img,
+.wind-speed img {
+  width: 20%;
+}
+
+.weather-details .text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* location-not-found */
+.location-not-found {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.location-not-found h1 {
+  font-size: 20px;
+  color: #6b6b6b;
+  margin-block-end: 15px;
+}
+
+.location-not-found img {
+  width: 100%;
+}
